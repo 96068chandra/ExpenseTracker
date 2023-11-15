@@ -14,9 +14,9 @@ namespace ExpenseTracker.Models
 
         public Category Category { get; set; }
         public int Amount { get; set; }
-        [Column(TypeName = "nvarchar(50)")]
-        public string? Description { get; set; }
-
+     
+        [Column(TypeName = "nvarchar(75)")]
+        public string? Note { get; set; }
         public DateTime Date { get; set; }= DateTime.Now;
 
     }
